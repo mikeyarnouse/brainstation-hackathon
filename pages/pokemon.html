@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../scripts/pokemon.js" type="module" defer></script>
+    <link rel="stylesheet" href="../styles/pokemon/pokemon.css">
+    <title>Pokémon</title>
+</head>
+
+<body>
+    <header class="nav-bar">
+        <h2 class="nav-bar__heading">
+            <a href="../index.html" class="nav-bar__heading-link">Game Room</a>
+        </h2>
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item">
+                <a class="nav-bar__link" href=" ../index.html">Home</a>
+            </li>
+            <li id="active" class="nav-bar__item">
+                <a class="nav-bar__link" href="./pokemon.html">Pokémon</a>
+            </li>
+            <li class="nav-bar__item">
+                <a class="nav-bar__link" href="./countries.html">Countries</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="pokemon__parent-container">
+            <h1 class="pokemon__heading">
+                PokéWho?
+            </h1>
+        </div>
+        <div class="pokemon__time-container">
+            <h2 class="pokemon__timeText">Seconds left: <span class="pokemon__timeAmt"></span></h2>
+        </div>
+        <div class="pokemon__game-container">
+            <div class="pokemon__score">
+                <h2 class="pokemon__score-text">Your Score: <span class="pokemon__score-amt">0</span></h2>
+            </div>
+            <div class="pokemon__img-container">
+            </div>
+            <div class="pokemon__game-form">
+                <form id="pokeForm" class="pokemon__form">
+                    <div class="pokemon__form-block">
+                        <label class="pokemon__label" for="Name">Type In Pokémon Name To Start:</label>
+                        <input class="pokemon__input" type="text" name="pokemon" placeholder="Enter Pokémon here">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

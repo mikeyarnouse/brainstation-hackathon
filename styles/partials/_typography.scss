@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "pokemon-body";
+  src: url(../assets/fonts/PokemonGb-RAeo.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "countries-body";
+  src: url(../../assets/fonts/MadimiOne-Regular.ttf) format("truetype");
+}

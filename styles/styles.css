@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "pokemon-body";
+  src: url(../assets/fonts/PokemonGb-RAeo.ttf) format("truetype");
+}
+@font-face {
+  font-family: "countries-body";
+  src: url(../../assets/fonts/MadimiOne-Regular.ttf) format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "primary", "sans-serif";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar {
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.75rem;
+  background-color: black;
+  gap: 3.75rem;
+}
+.nav-bar__heading {
+  padding: 0;
+  font-size: 2.5rem;
+}
+.nav-bar__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-bar__link:hover {
+  border-bottom: rgba(211, 211, 211, 0.418) 2px solid;
+  color: lightgrey;
+}
+
+#active {
+  border-bottom: 1px solid white;
+}
+
+.header__title {
+  font-size: 3.75rem;
+  color: white;
+}
+
+.nav-bar {
+  justify-content: center;
+}
+
+.game {
+  background-image: url(../assets/images/arcade.jpg);
+  background-size: cover;
+  background-position: 10% 75%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.game__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 4px 4px 4px #0a0605;
+}
+.game__cards-link {
+  text-decoration: none;
+  color: black;
+}
+.game__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.game__sub-title--pkmn {
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+}
+.game__sub-title--cntry {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+.game__cards {
+  border: rgb(255, 255, 255) 2px solid;
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 6px 4px 5px #0a0605;
+}
+.game__cards--pokemon {
+  background-image: url(../assets/images/game-room-pokemon-card.jpg);
+  background-position-x: -3.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.game__cards--geo {
+  background-image: url(../assets/images/earth-facts.jpg);
+  background-size: cover;
+}
+.game__cards:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease;
+}
+
+.footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

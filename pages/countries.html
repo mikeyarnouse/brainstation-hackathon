@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/countries.js" type="module" defer></script>
+    <link rel="stylesheet" href="../styles/countries/countries.css">
+    <title>Countries</title>
+</head>
+
+<body>
+    <header class="nav-bar">
+        <h2 class="nav-bar__heading">
+            <a href="../index.html">Game Room</a>
+        </h2>
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item nav-bar__item--current">
+                <a href="../index.html" class="nav-bar__link">Home</a>
+            </li>
+            <li class="nav-bar__item">
+                <a href="./pokemon.html" class="nav-bar__link">Pokémon</a>
+            </li>
+            <li class="nav-bar__item">
+                <a id="active" class="nav-bar__link" href="./countries.html">Countries</a>
+            </li>
+        </ul>
+    </header>
+    <main class="game">
+        <div class="game-head">
+            <h1 class="game-head__title">Name a country</h1>
+            <h2 class="game-head__timeText">Seconds left: <span class="game-head__timeAmt"></span></h2>
+        </div>
+        <div class="game-input">
+            <form class="game-input__form" id="countryForm">
+                <label for="countries">Type in the name of a country to begin:</label>
+                <input type="text" name="countries" id="countryInput" placeholder="Name a country">
+            </form>
+        </div>
+        <div class="game-content">
+            <div class="game-content-score">
+                <h2 class="game-content-score__text">Your Score: <span class="game-content-score__amt">0</span></h2>
+            </div>
+
+            <div class="game-content-lives">
+                <h2 class="game-content-lives__text">Lives left: <span class="game-content-lives__amt">2</span></h2>
+            </div>
+        </div>
+        <div class="game-countries">
+            <h2 class="game-countries__text">Countries Listed:</h2>
+            <div class="game-countries-listed"></div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "primary";
+  src: url(../../assets/fonts/SpaceMono-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "pokemon-body";
+  src: url(../assets/fonts/PokemonGb-RAeo.ttf) format("truetype");
+}
+@font-face {
+  font-family: "countries-body";
+  src: url(../../assets/fonts/MadimiOne-Regular.ttf) format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "primary", "sans-serif";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar {
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.75rem;
+  background-color: black;
+  gap: 3.75rem;
+}
+.nav-bar__heading {
+  padding: 0;
+  font-size: 2.5rem;
+}
+.nav-bar__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-bar__link:hover {
+  border-bottom: rgba(211, 211, 211, 0.418) 2px solid;
+  color: lightgrey;
+}
+
+#active {
+  border-bottom: 1px solid white;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: black;
+}
+
+main {
+  background-image: url("../../assets/images/poke-city.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.pokemon__parent-container {
+  display: flex;
+  justify-content: center;
+}
+.pokemon__heading {
+  display: flex;
+  justify-content: start;
+  font-size: 72px;
+  color: rgb(255, 203, 5);
+  text-shadow: -1px 1px 0 black;
+}
+.pokemon__timeText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pokemon__score {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pokemon__img-container {
+  display: flex;
+  justify-content: center;
+}
+.pokemon__img-container img {
+  margin-top: 3.75rem;
+  height: 20rem;
+  width: 20rem;
+}
+.pokemon__game-form {
+  margin-top: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.pokemon__form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.pokemon__form {
+  display: flex;
+  justify-content: center;
+}
+.pokemon__label {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.pokemon__input {
+  margin-top: 1rem;
+  width: 12.5rem;
+  height: 2.25rem;
+  text-align: center;
+  border-radius: 8px;
+  border-style: none;
+  background-color: black;
+  color: white;
+}
+.pokemon__input::-moz-placeholder {
+  color: white;
+}
+.pokemon__input::placeholder {
+  color: white;
+}
+
+.player-score {
+  font-size: 40px;
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-again__btn {
+  width: 27.5vw;
+  height: 6vh;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 6px 4px 5px #0a0605;
+  border: rgb(0, 64, 128);
+  background-color: rgb(0, 64, 128);
+  font-size: 1.5rem;
+  font-size: 35px;
+  margin-top: 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=pokemon.css.map */

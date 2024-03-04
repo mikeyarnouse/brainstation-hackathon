@@ -1,0 +1,153 @@
+@use "../partials/globals";
+@use "../partials/typography";
+
+.game {
+  // height: 80rem;
+  height: 90vh;
+  padding: 1rem 1.75rem;
+  font-family: "countries-body";
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  background-image: url(../../assets/images/vintage-world-map-texture-free.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+
+  &-head {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__timeText {
+      width: 240px;
+    }
+
+    &__start {
+      height: 55px;
+      width: 275px;
+      background-color: rgb(63, 42, 20);
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 60px;
+      border: rgb(63, 42, 20);
+      box-shadow: 5px 5px 5px #0a0605;
+    }
+    &__start:hover {
+      transform: translateY(2px);
+      cursor: pointer;
+    }
+  }
+
+  &-input {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+
+      label {
+        font-size: 1.75rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+
+    &-score {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-countries {
+    width: 100%;
+    // flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+      text-decoration: underline;
+    }
+
+    &-listed {
+      width: 100%;
+      margin-top: 1rem;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: 15px;
+
+      &__correct {
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        color: green;
+        font-weight: 600;
+      }
+      &__incorrect {
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        color: red;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .play-again__btn {
+    width: 30vw;
+    height: 6vh;
+    background-color: rgb(0, 64, 128);
+    border-radius: 10px;
+    box-shadow: 6px 4px 5px #0a0605;
+    border: rgb(0, 64, 128);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .player-score {
+    font-size: 40px;
+  }
+}
+#countryInput {
+  text-align: center;
+  border-radius: 8px;
+  border-style: none;
+  width: 15rem;
+  height: 2.5rem;
+
+  &::placeholder {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
